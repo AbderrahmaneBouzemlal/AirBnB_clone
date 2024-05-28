@@ -17,7 +17,6 @@
     padding: 20px;
     border: 1px solid #FF5A5F;
     border-radius: 4px;
-    /* background-color: red; */
 }
 .places .articles article h2 {
     font-size: 30px;
@@ -127,4 +126,90 @@ article .wifi {
 }
 .places article .reviews ul li p {
     font-size: 12px;
+}
+/* Mobile Devices (up to 480px) */
+@media screen and (max-width: 480px) {
+    .places h1 {
+        font-size: 24px;
+        margin: 20px 5px 0px;
+        text-align: center;
+    }
+    .articles {
+        flex-direction: column;
+        align-items: center;
+    }
+    .places .articles article {
+        width: 100%;
+        margin: 10px 0;
+        padding: 15px;
+    }
+    .places .articles article h2 {
+        font-size: 24px;
+        margin-right: 0;
+    }
+    .price-container {
+        justify-content: flex-end;
+    }
+    article .price_by_night {
+        min-width: 50px;
+        height: 50px;
+        font-size: 24px;
+        margin-left: 21%;
+    }
+    .information {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .max_guest, .number_rooms, .number_bathrooms {
+        width: auto;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .max_guest div, .number_rooms div, .number_bathrooms div {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+/* Tablets (481px to 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .places h1 {
+        font-size: 26px;
+        margin: 25px 5px 0px;
+    }
+    .articles {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .places .articles article {
+        width: 45%;
+        margin: 15px 2.5%;
+    }
+    .places .articles article h2 {
+        font-size: 26px;
+        margin-right: 0;
+    }
+    .price-container {
+        justify-content: center;
+    }
+    article .price_by_night {
+        min-width: 55px;
+        height: 55px;
+        font-size: 26px;
+        margin-left: 53px;
+    }
+    .information {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .max_guest, .number_rooms, .number_bathrooms {
+        width: 30%;
+        text-align: left;
+    }
+    .max_guest div, .number_rooms div, .number_bathrooms div {
+        height: 45px;
+        width: 45px;
+    }
 }

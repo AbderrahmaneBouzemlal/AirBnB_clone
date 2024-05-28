@@ -80,21 +80,30 @@ button:hover {
 
 @media (max-width: 768px) {
     .filters {
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
+        align-items: stretch;
         border: 1px solid #b3b1b1;
-        border-radius: 30px;
+        border-radius: 4px;
         height: auto;
-        max-width: 80%;
-        margin: auto;
+        width: 90%;
+        margin: 20px auto;
+        padding: 10px;
     }
     .filters .locations, .filters .amenities {
         width: 100%;
-        padding: 10px 0px;
-        border-right: none;
+        padding: 10px 0;
+        border: none;
+        align-items: flex-start;
+    }
+    .filters .locations {
         border-bottom: 1px solid #DDD;
+        border-right: none;
     }
     button {
+        background-color: #FF5A5F;
+        color: #FFF;
+        background-size: cover;
+        font-size: 16px;
         width: 100%;
         margin: 10px 0;
     }
